@@ -109,10 +109,51 @@ console.log(myStudents.indexOf('Mariam'))
 
 
 
-// slice()
+// slice(start, end): copies array from start to end (NOT INCLUDING END)
 const slicedArr = myStudents.slice(1,3)
 
+
+
 console.log(slicedArr)
-// split()
+// split(): converts string into array
+
+const welcome = 'WelcOme to SEB'
+
+const splitArr = welcome.split('O')
+
+console.log(splitArr)
 
 // join()
+console.log(myStudents.join(''))
+
+
+/* 
+Methods that change(mutate) the original array:
+
+push()
+pop()
+shift()
+unshift()
+splice()
+
+
+dont change the original array:
+
+forEach()
+slice()
+*/
+
+
+
+
+const copiedArr = [...myStudents,...splitArr]
+
+console.log('myStudents',myStudents)
+console.log('copiedStudents',copiedArr)
+
+myStudents.pop()
+
+console.log('myStudents',myStudents)
+console.log('copiedStudents',copiedArr)
+
+
