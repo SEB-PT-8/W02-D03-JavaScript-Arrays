@@ -38,3 +38,21 @@ console.log(myName.toUpperCase())
 myStudents.push('Husain')
 
 console.log(myStudents)
+
+
+// pop(): removes the last element from the array
+
+myStudents.pop()
+
+console.log(myStudents)
+
+
+
+// shift(): remove from the beggening of array
+myStudents.shift()
+console.log(myStudents)
+
+
+// unshift() adding to the beggening of the array
+myStudents.unshift('Sayed')
+console.log(myStudents)
